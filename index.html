@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday Ruchie!</title>
+    <!-- Google Fonts for Elegant Serif & Sans Typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Plus+Jakarta+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --bg-gradient: linear-gradient(180deg, #FDF0F5 0%, #FAF0F8 50%, #F5ECF7 100%);
+            --card-bg: #FFFFFF;
+            --text-dark: #332A36;
+            --text-muted: #8E7B93;
+            --accent-pink: #D07CA2;
+            --button-bg: #221527;
+            --button-text: #FFFFFF;
+            --border-light: #F2E4F0;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background: var(--bg-gradient);
+            color: var(--text-dark);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px 10px;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 440px;
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+            align-items: center;
+            text-align: center;
+        }
+
+        /* --- Header Section --- */
+        .badge {
+            display: inline-block;
+            background: rgba(255, 255, 255, 0.8);
+            border: 1px solid var(--border-light);
+            border-radius: 20px;
+            padding: 6px 16px;
+            font-size: 0.75rem;
+            letter-spacing: 1.5px;
+            color: var(--text-muted);
+            font-weight: 600;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+        }
+
+        .cake-emoji {
+            font-size: 5rem;
+            margin-bottom: 10px;
+            animation: bounce 2s infinite ease-in-out;
+        }
+
+        @keyframes bounce {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+
+        .hero-title {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.8rem;
+            font-weight: 400;
+            line-height: 1.2;
+            color: var(--text-dark);
+            margin-bottom: 15px;
+        }
+
+        .hero-title span {
+            font-style: italic;
+            color: var(--accent-pink);
+        }
+
+        .hero-subtext {
+            font-size: 0.95rem;
+            line-height: 1.6;
+            color: #635368;
+            padding: 0 15px;
+            margin-bottom: 25px;
+        }
+
+        .btn-primary {
+            background-color: var(--button-bg);
+            color: var(--button-text);
+            border: none;
+            padding: 14px 28px;
+            border-radius: 30px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            letter-spacing: 1px;
+            cursor: pointer;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            text-transform: uppercase;
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+        }
+
+        /* --- Card Section --- */
+        .section-tag {
+            font-size: 0.75rem;
+            letter-spacing: 1.5px;
+            color: var(--accent-pink);
+            font-weight: 600;
+            margin-bottom: 8px;
+            text-transform: uppercase;
+        }
+
+        .section-heading {
+            font-family: 'Playfair Display', serif;
+            font-size: 2rem;
+            font-weight: 400;
+            margin-bottom: 20px;
+        }
+
+        .section-heading span {
+            font-style: italic;
+            color: var(--accent-pink);
+        }
+
+        .card {
+            background: var(--card-bg);
+            border-radius: 28px;
+            padding: 35px 25px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.03);
+            text-align: left;
+            position: relative;
+            border: 1px solid #FAF2F8;
+            width: 100%;
+        }
+
+        .card::before {
+            content: "“";
+            position: absolute;
+            top: 10px;
+            left: 20px;
+            font-family: 'Playfair Display', serif;
+            font-size: 5rem;
+            color: #F3E6F1;
+            line-height: 1;
+        }
+
+        .card-body {
+            position: relative;
+            font-size: 1.05rem;
+            line-height: 1.8;
+            color: #4A3E4E;
+            font-family: 'Playfair Display', serif;
+            margin-bottom: 30px;
+        }
+
+        .card-footer {
+            border-top: 1px solid #F6EDF5;
+            padding-top: 20px;
+        }
+
+        .card-footer-label {
+            font-size: 0.7rem;
+            letter-spacing: 1.5px;
+            color: var(--text-muted);
+            text-transform: uppercase;
+            font-weight: 600;
+            margin-bottom: 5px;
+        }
+
+        .signature {
+            font-family: 'Playfair Display', serif;
+            font-style: italic;
+            font-size: 1.6rem;
+            color: var(--accent-pink);
+        }
+
+        /* --- Grand Finale Section --- */
+        .grand-finale-card {
+            background: linear-gradient(180deg, #F8EEFC 0%, #F1E4F7 100%);
+            border-radius: 28px;
+            padding: 40px 25px;
+            width: 100%;
+            border: 1px solid #EADBEE;
+        }
+
+        .surprise-box {
+            display: none;
+            margin-top: 20px;
+            padding: 20px;
+            background: #FFFFFF;
+            border-radius: 16px;
+            font-family: 'Playfair Display', serif;
+            font-size: 1.1rem;
+            color: var(--text-dark);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+            animation: fadeIn 0.5s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* --- Floating Banners --- */
+        .decorations {
+            font-size: 1.2rem;
+            display: flex;
+            justify-content: center;
+            gap: 12px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+
+        <!-- HEADER SECTION -->
+        <header>
+            <div class="badge">🎂 It's Your Special Day 🎂</div>
+            <div class="cake-emoji">🎂</div>
+            <h1 class="hero-title">Happy <span>Birthday,</span><br>Ruchie 🥳</h1>
+            <p class="hero-subtext">
+                Today the whole world pauses for a moment — just to celebrate the remarkable, radiant, irreplaceable you. ✨🎀
+            </p>
+            <button class="btn-primary" onclick="scrollToCard()">Open Your Gift 🎁</button>
+        </header>
+
+        <!-- WORDS FROM THE HEART SECTION -->
+        <section id="message-section" style="width: 100%;">
+            <div class="section-tag">✉️ A Birthday Message For You</div>
+            <h2 class="section-heading">Words from the <span>heart</span> 💖</h2>
+            
+            <div class="card">
+                <div class="card-body">
+                    Dear Ruchie — where do I even begin? 🎂<br><br>
+                    Every single moment spent with you has been a treasure I hold close to my heart. Watching you grow, succeed, and shine has been the greatest privilege of my life. You make every room brighter just by being in it. 🧁
+                </div>
+                <div class="card-footer">
+                    <div class="card-footer-label">With all my love,</div>
+                    <div class="signature">— Arwachi 🎂✨</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- GRAND FINALE SECTION -->
+        <section class="grand-finale-card">
+            <div class="section-tag">🎁 The Grand Finale 🎊</div>
+            <h2 class="section-heading">One last <span>surprise</span> 🎉</h2>
+            <p style="font-size: 0.9rem; color: #635368; margin-bottom: 20px;">
+                We have been saving the very best birthday surprise for last. 🎂✨
+            </p>
+
+            <button class="btn-primary" style="background-color: #FFFFFF; color: var(--text-dark); border: 1px solid #E0CEE3;" onclick="revealSurprise()">
+                🎂 Reveal The Birthday Surprise 🎂
+            </button>
+
+            <div id="surprise" class="surprise-box">
+                🎉 ✨ Wishing you a year filled with endless joy, beautiful moments, and all the success in the world! Happy Birthday Ruchie! 🥳🎁
+            </div>
+        </section>
+
+        <div class="decorations">
+            🎈 🎁 🎈 🎁 🎈
+        </div>
+
+    </div>
+
+    <script>
+        function scrollToCard() {
+            document.getElementById('message-section').scrollIntoView({ behavior: 'smooth' });
+        }
+
+        function revealSurprise() {
+            const surpriseBox = document.getElementById('surprise');
+            if (surpriseBox.style.display === 'block') {
+                surpriseBox.style.display = 'none';
+            } else {
+                surpriseBox.style.display = 'block';
+            }
+        }
+    </script>
+</body>
+</html>
